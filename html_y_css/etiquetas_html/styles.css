@@ -1,0 +1,69 @@
+/*Estilos generales*/
+body {
+  background-color: rgb(46, 44, 44);
+  font-family: Arial, sans-serif; /* Tipo de letra */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alineación */
+  height: 100vh;
+  margin: 0; /* Espacio externo */
+}
+
+/*Diseño de seccciones*/
+.container {
+  background-color: rgb(69, 67, 67); /* Fondo del elemento */
+  color: white; /* Color del texto */
+  display: flex;
+  border: 10px; /* Borde alrededor del elemento */
+  overflow: hidden;
+  width: 550px;
+  box-shadow: 0 4px 8px rgba(8, 0, 0, 0.5);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24.5px; /* Tamaño de fuente(letra) */
+}
+
+footer {
+  background: rgb(34, 34, 34);
+  color: white;
+  padding: 10px;
+}
+
+.imagen {
+  width: 200px;
+  height: auto;
+  /*object-fit: cover;*/
+}
+
+.info {
+  padding: 15px; /* Espacio interno */
+  flex-grow: 1;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(242, 243, 244);
+  margin: 5px 0;
+}
+
+.etiq {
+  color: rgb(170, 170, 170);
+  font-size: 13.2px;
+  margin-top: 10px;
+}
+
+.ubc {
+  color: rgb(255, 152, 0);
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+.ep {
+  color: rgb(244, 246, 246);
+  font-size: 14.5px;
+  margin: 3px 0;
+}
