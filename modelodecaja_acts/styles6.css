@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(31, 97, 141); /* Color de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    background-color: rgb(52, 152, 219);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.links {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.button {
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1 {
+    color: rgb( 214, 234, 248);
+    font-size: 10;
+}
+
+p {
+    color: white;
+    
+}

@@ -1,0 +1,23 @@
+.flex-container {
+    display: flex; /* Convierte en un contenedor flexible, permitiendo organizar sus elementos hijos de manera eficiente en filas o columnas y distribuirlos fácilmente */
+    justify-content: space-between; /* Deja el máximo espacio posible entre ellos sin márgenes laterales */
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid rgb(108, 52, 131); /* Crea un borde alrededor */
+  }
+  
+  .flex-item {
+    background-color: brown;
+    color: cyan;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  /*
+  Ejercicio 5:
+  
+    Con 'justify-content: space-around'; elementos con espacios iguales alrededor de cada uno
+    Con 'justify-content: space-evenly'; espacios iguales entre ellos y también con los bordes del contenedor.
+    Con 'justify-content: center'; alinea los elementos al centro del contenedor sin espacio entre ellos.
+*/ 

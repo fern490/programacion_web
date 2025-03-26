@@ -1,0 +1,6 @@
+.en-linea {
+    display: inline; /*no permite el ajuste de alto y ancho, ya que su tamaño se adapta al contenido */
+    background-color: rgb(255, 204, 0); /* Color de fondo */
+    margin: 5px; /* Margen */
+    padding: 5px;
+}

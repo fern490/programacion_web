@@ -1,0 +1,11 @@
+.bloque {
+    display: block;
+    background-color: rgb(76,175,80); /* Color de fondo */
+    color: white;
+    margin-bottom: 20px; /* Margen entre los bloques */
+    padding: 20px;
+    text-align: center;
+    width: 80%; /* modificar */
+    margin-left: auto;
+    margin-right: auto; /* Centra los bloques */
+  }
