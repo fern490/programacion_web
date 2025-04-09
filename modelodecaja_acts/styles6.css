@@ -1,49 +1,72 @@
 body {
-    background-color: rgb(31, 97, 141); /* Color de fondo */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-    color: white;
+  margin: 0; /* Elimina el margen externo */
+  padding: 0; /* Elimina el espacio interno */
+  display: flex; /* Usa Flexbox para organizar los elementos */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center;
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  background-color: rgb(11, 60, 96);
+  font-family: Arial, sans-serif;
+  flex-direction: column; /* Acomoda los elementos en columna */
 }
 
 .container {
-    background-color: rgb(52, 152, 219);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.login-button {
-    background-color: white;
-    color: black;
-    padding: 10px;
-    margin: 10px auto;
-    width: 90%;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.links {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.button {
-    margin-top: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
+.login {
+  background-color: rgb(48, 127, 211);
+  padding: 30px; /* Agrega espacio interno */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px; /* Fija el ancho de la caja */
 }
 
 h1 {
-    color: rgb( 214, 234, 248);
-    font-size: 10;
+  color: rgb(234, 242, 248);
+  margin-bottom: 20px; /* Agrega espacio debajo del título */
+  letter-spacing: 3px;
 }
 
-p {
-    color: white;
-    
+input {
+  width: 92.1%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 230);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(174, 214, 241);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.links {
+  margin-top: 15px;
+  color: rgb(139, 174, 197);
+}
+
+.links a {
+  display: block; /* Hace que los enlaces ocupen una línea completa */
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.volver {
+  display: block;
+  margin-top: 15px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  width: 350px;
 }

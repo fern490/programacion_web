@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="styles6.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Modelo de Caja</title>
+    <link rel="stylesheet" href="styles6.css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="login">
         <h1>Bienvenido</h1>
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Contraseña">
-      <div class="login-button">Login</div>
-      <div class="links">
-          <p><a href="#">¿Perdiste tu contraseña?</a></p>
-          <p><a href="#">¿No tienes cuenta? Regístrate</a></p>
+        <form>
+          <input type="text" placeholder="Usuario" required />
+          <!--Muestra "Usuario" dentro del campo antes que se escriba-->
+          <input type="password" placeholder="Contraseña" required />
+          <button type="submit">Login</button>
+        </form>
+        <div class="links">
+          <a href="#">¿Perdiste tu contraseña?</a>
+          <a href="#">¿No tienes cuenta? Regístrate</a>
+        </div>
       </div>
+      <a href="#" class="volver">Volver</a>
     </div>
-    <a href="#" class="button">Volver</a>
-</body>
+  </body>
 </html>
+
+<!--<div>...</div> es un contenedor genérico para agrupar elementos y organizar el contenido
+<form>...</form> Define un formulario interactivo para la entrada de datos
+<input type="text"> Es un campo de texto
+<a> Se usa para crear enlaces(hipervínculos) que permiten ir a otras páginas-->
