@@ -1,0 +1,10 @@
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-auto-rows: auto;
+}
+
+img {
+  width: 100px;
+  padding: cover;
+}
