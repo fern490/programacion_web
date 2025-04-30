@@ -3,7 +3,7 @@ let variable2 = "pueden ser reescritos sus valores";
 const variable3 = "en este tipo sus valores no cambian";
 
 const text = "String";
-const numero = 2; //ej: tipo 'int'
+//const numero = 2; //ej: tipo 'int'
 const booleanos = true; //o false tipo 'Boolean'
 
 //operadores aritméticos son todos los de matemática; + - / % *
@@ -52,3 +52,35 @@ for (let 1 = 0; < miArreglo.lenght; 1++) (
   console.log(miArreglo[1]); //imprime en pantalla el arreglo con su posicion
 )
 */
+
+//Ejercicios de dificultad media: con 'if'
+
+let num = 5;
+
+if (num < 0) {
+  console.log("Negativo");
+} else if (num === 0) {
+  console.log("Cero");
+} else {
+  console.log("Positivo");
+}
+
+//empleando 'for':
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    sum += i;
+  }
+}
+console.log("La suma de los números pares del 1 al 10 es:", sum);
+
+//usando 'for'(versión intermedia):
+let number = 0;
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0 && i % 5 !== 0) {
+    number += i;
+  }
+}
+console.log("La suma total es:", number);
