@@ -53,6 +53,8 @@ for (let 1 = 0; < miArreglo.lenght; 1++) (
 )
 */
 
+
+
 //Ejercicios de dificultad media: con 'if'
 
 let num = 5;
