@@ -23,7 +23,9 @@ let parrafo = document.createElement("p");
 parrafo.textContent = "Este es el parrafo creado";
 container.append(parrafo);
 
-//Ejercicio 1
+
+
+//Ejercicio 1 'DOM'
 
 function agregarTarea() {
     const input = document.getElementById("Tarea");

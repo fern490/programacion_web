@@ -1,4 +1,6 @@
-/*let inventario = [];
+/* 🧪 Ejercicio: Tienda de productos
+
+let inventario = [];
 
 inventario.push({nombre: "Auriculares", precio: 5500, categoria: "Electrónica"},
                 {nombre: "Zapatillas", precio: 9000, categoria: "Ropa"},
@@ -13,7 +15,6 @@ console.log("\nProductos de Tecnología: ", electrónica)
 
 const nombres = inventario.map(producto => producto.nombre);
 console.log("Nombres de los productos: ", nombres)*/
-
 
 
 let peliculas = [];

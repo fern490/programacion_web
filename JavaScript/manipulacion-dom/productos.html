@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compras</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: lightblue;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        align-items: center;
+      }
+      li.comprado {
+        text-decoration: line-through;
+        color: gray;
+      }
+      button {
+        padding: 5px 10px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .comprado-btn {
+        background-color: #4CAF50;
+        color: white;
+      }
+      .eliminar-btn {
+        background-color: #f44336;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista de Compras</h1>
+    <div class="container">
+      <input type="text" id="Producto" placeholder="Agregar producto"/>
+      <button onclick="agregarProducto()">Agregar</button>
+      <ul id="listaProductos"></ul>
+    </div>
+    <script src="productos.js"></script>
+  </body>
+</html>
