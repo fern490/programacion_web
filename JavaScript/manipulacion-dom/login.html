@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio Falso Login</title>
+</head>
+<body>
+    <div id="loginContainer">
+        <h1>Iniciar Sesión</h1>
+        <input type="text" id="username" placeholder="Usuario" required /><br><br>
+        <input type="password" id="password" placeholder="Contraseña" required /><br><br>
+        <button onclick="login()">Login</button>
+        <p id="error" style="color: cyan;"></p>
+    </div>
+    <div id="employeeList" style="display: none;">
+        <h2>Empleados</h2>
+        <button onclick="logout()">Cerrar sesión</button>
+        <div id="empleados"></div>
+    </div>
+    <script src="falso_login+lista.js"></script>
+</body>
+</html>
