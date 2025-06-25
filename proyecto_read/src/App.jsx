@@ -1,20 +1,29 @@
-import "./App.css"
-import { Proveedor } from './components/proveedor/proveedor';
-import Usuario from "./components//Usuario";
 import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [characters, setCharacters] = useState([])
-  // userEffect va a ejecutar el codigo que se encuentra 
-  userEffect(() =>{
-    fetch("https://rickandmortyapi.com/api/character/?page=19")
-    .then()
-  }, {})
+  const [nombre, setNombre] = useState("");
 
-  return (<>Hola Mundo
-  <button>Hola soy un boton</button>
-  <Usuario />
-  </>);
+  const handleClick = () => {
+    console.log("Hola");
+  };
+
+  const handleInputChange = (event) => {
+    setNombre(event.target.value);
+  };
+
+  return (
+    <>
+      <input
+        type="text"
+        placeholder="Escribí tu nombre"
+        value={nombre}
+        onChange={handleInputChange}
+      />
+      <p>Lo que escribiste: {nombre}</p>
+      <button onClick={handleClick}>Saludar en consola</button>
+    </>
+  );
 }
 
-export default App
+export default App;
