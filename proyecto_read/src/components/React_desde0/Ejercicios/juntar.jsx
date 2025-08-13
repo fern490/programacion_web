@@ -1,4 +1,4 @@
-// Ejercicio 5: Todo junto (useState + useEffect + onClick + onChange)
+ // Ejercicio 5: Todo junto (useState + useEffect + onClick + onChange)
 
 import { use, useEffect, useState } from "react";
 
