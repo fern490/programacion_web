@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+function App() {
+
 const [num, setNum] = useState([1, 2, 3]);
 const [persona, setPersona] = useState({ nombre: "Pepito", edad: 30 });
 
@@ -15,25 +17,41 @@ function prop() {
 /*Spread Operator: se usa principalmente para la manipulación de arrays, objetos y accesorios de componentes*/
 
 /*Tarea: hacer que el setNum agregue números consecutivos => 3 puntos (.lenght)*/
-  function addNum() {
-    setNum([...num, num.length +1]);
-  }
+function addNum() {
+  setNum([...num, num.length +1]);
+  console.log([...num, num.length + 1]);
+}
 
-//opcional => 3 puntos: Partiendo de { nombre: "Pepito", edad: 30 }, cambia solo nombre a "Luis" usando 
+//opcional => 3 puntos: Partiendo de { nombre: "Pepito", edad: 30 }, cambia solo nombre a "Luis" usando 'spread operator'
+function cambNom() {
+  const nuevaPersona = { ...persona, nombre: "Luis" };
+  setPersona(nuevaPersona);
+  console.log(nuevaPersona);
+}
 
 function myFunction() {
-  setNum([...num, 5])
-}
-function funct() {
-  return (
-    <>
-     <div>
-     {num.map((item, index) => (
-      <p>{item}</p>
-      ))}
-      <button onClick={myFunction}>Agregar número</button>
-     </div>
-    </>
-)}
+    setNum([...num, 5]);
+  }
 
-export default addNum;
+  return (
+    <div>
+      <h3>Persona: {JSON.stringify(persona)}</h3>
+      <h3>Números: {num.join(", ")}</h3>
+
+      {/* Llaman a las funciones */}
+      <button onClick={prop}>Agregar país</button>
+      <button onClick={addNum}>Agregar número consecutivo</button>
+      <button onClick={cambNom}>Cambiar nombre</button>
+      <button onClick={myFunction}>Agregar 5</button>
+
+      {/* Renderizar lista de números */}
+      <div>
+        {num.map((item, index) => (
+          <p key={index}>{item}</p>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default App;
