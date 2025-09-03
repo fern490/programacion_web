@@ -33,21 +33,21 @@ function myFunction() {
     setNum([...num, 5]);
   }
 
-  return (
+  return ( // JSON.stringify: convierte un objeto o valor de JS en una cadena de texto con formato JSON
     <div>
       <h3>Persona: {JSON.stringify(persona)}</h3>
       <h3>Números: {num.join(", ")}</h3>
 
-      {/* Llaman a las funciones */}
+      {/* Llamando a las funciones */}
       <button onClick={prop}>Agregar país</button>
       <button onClick={addNum}>Agregar número consecutivo</button>
       <button onClick={cambNom}>Cambiar nombre</button>
       <button onClick={myFunction}>Agregar 5</button>
 
-      {/* Renderizar lista de números */}
+      {/* Renderizar lista de números (setNum([...num, 5])) */}
       <div>
-        {num.map((item, index) => (
-          <p key={index}>{item}</p>
+        {num.map((item, index) => ( // recorre el array 'num' y devuelve un nuevo array
+          <p key={index}>{item}</p> /*crea un párrafo por cada elemento con una clave única para que React pueda identificar cada `ítem´ al renderizar*/
         ))}
       </div>
     </div>
